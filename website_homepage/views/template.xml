@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+
+    <!-- load asset -->
+
+    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Image Homepage" customize_show="False">
+      <xpath expr="." position="inside">
+            <script type="text/javascript" src="/website_homepage/static/src/js/examples.js"></script>
+            <link rel='stylesheet' href='/website_homepage/static/src/css/examples.css'/>
+            <link rel='stylesheet' href='/website_homepage/static/src/css/homepage.css'/>
+            <link rel='stylesheet' href='/website_homepage/static/src/css/jquery.fullPage.css'/>
+            <script type="text/javascript" src="/website_homepage/static/src/js/homepage.js"></script>
+            <script type="text/javascript" src="/website_homepage/static/src/js/jquery.slimscroll.min.js"></script>
+            <script type="text/javascript" src="/website_homepage/static/src/js/jquery.fullPage.js"></script>.
+        </xpath>
+    </template>
+
+    <!-- Our Expertize Template -->
+
+    <!--template id="expertize" name="Expertize">
+        <h3 class="section-title">Our expertise</h3>
+            <div class="widget">
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
+                            ODOO Implementation
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                        <p>
+                          Comprehensive ERP implementation services for your business, including Requirement gathering, customisation, development, data migration, training and post deployment support.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                            Web Design &amp; eCommerce
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
+                        <div class="panel-body">
+                          <p>
+                          Elegant, Powerful, responsive web designs for corporate and individuals. Our experts design websites for all e-commerce, CMS based Website which are device &amp; browser independent. Online Commerce- an innovative way to display &amp; sell your products online. Build easy to navigate, fast ordering one step check out process, device compatible responsive websites for your customized needs.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
+                            Support
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse in" style="height: auto;">
+                        <div class="panel-body">
+                        <p>
+                        We provide all type of service &amp; support after sales because we belive that once sytem is deployed work not end over there but real work starts after that. We provide 24X7 service to our clients.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    </template-->
+
+    <!-- Create homepage -->
+    
+    <template id="homepage" inherit_id="website.homepage" name="Homepage">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <div id="fullpage">
+                <div class="section " id="section0">
+                    <video autoplay="" loop="" muted="" id="myVideo">
+                        <source src="/website_homepage/static/src/img/flowers.mp4" type="video/mp4"/>
+                        <source src="/website_homepage/static/src/img/flowers.webm" type="video/webm"/>
+                    </video>
+                    <div class="layer">
+                        <h1>You will love our service</h1>
+                    </div>
+                </div>
+                <div class="section" id="section1">
+                    <div class="slide" id="slide1">
+                        <div class="intro">
+                            <h1>Clickable</h1>
+                            <p>
+                                You can even click on the navigation and jump directly to another section.
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="slide" id="slide2">
+                        <h1>Slide 2</h1>
+                    </div>
+            
+                </div>
+                <div class="section" id="section2">
+                    <div class="intro">
+                        <h1>Enjoy it</h1>
+                    </div>
+                </div>
+                <div class="section" id="section3">
+                    <div class="intro">
+                        <h1>Love it</h1>
+                    </div>
+                </div>
+                <div class="section" id="section4">
+                    <div class="intro">
+                        <h1>Just do it</h1>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+</data>
+</openerp>
