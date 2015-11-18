@@ -16,70 +16,25 @@
         </xpath>
     </template>
 
-    <!-- Our Expertize Template -->
-
-    <!--template id="expertize" name="Expertize">
-        <h3 class="section-title">Our expertise</h3>
-            <div class="widget">
-                <div class="panel-group" id="accordion">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed">
-                            ODOO Implementation
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="panel-body">
-                        <p>
-                          Comprehensive ERP implementation services for your business, including Requirement gathering, customisation, development, data migration, training and post deployment support.
-                        </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-                            Web Design &amp; eCommerce
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;">
-                        <div class="panel-body">
-                          <p>
-                          Elegant, Powerful, responsive web designs for corporate and individuals. Our experts design websites for all e-commerce, CMS based Website which are device &amp; browser independent. Online Commerce- an innovative way to display &amp; sell your products online. Build easy to navigate, fast ordering one step check out process, device compatible responsive websites for your customized needs.
-                        </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        <h4 class="panel-title">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="">
-                            Support
-                          </a>
-                        </h4>
-                      </div>
-                      <div id="collapseThree" class="panel-collapse in" style="height: auto;">
-                        <div class="panel-body">
-                        <p>
-                        We provide all type of service &amp; support after sales because we belive that once sytem is deployed work not end over there but real work starts after that. We provide 24X7 service to our clients.
-                        </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-    </template-->
-
     <!-- Create homepage -->
     
     <template id="homepage" inherit_id="website.homepage" name="Homepage">
         <xpath expr="//div[@id='wrap']" position="replace">
             <div id="fullpage">
                 <div class="section " id="section0">
+                    <header class="new-header col-md-12"> 
+                        <h1 class="logo col-md-3">
+                            
+                        </h1> 
+                        <nav class="col-md-9">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/page/website.contactus">Contact us</a></li>
+                                <li>services</li>
+                                <li><a href="/blog">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </header>
                     <video autoplay="" loop="" muted="" id="myVideo">
                         <source src="/website_homepage/static/src/img/flowers.mp4" type="video/mp4"/>
                         <source src="/website_homepage/static/src/img/flowers.webm" type="video/webm"/>

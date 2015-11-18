@@ -15,12 +15,12 @@
       text-align:center;
   }
 
-
   /* Backgrounds will cover all the section
   * --------------------------------------- */
   .section{
       background-size: cover;
   }
+
   .slide{
       background-size: cover;
   }
@@ -53,6 +53,7 @@
   }
 
   /*solves problem with overflowing video in Mac with Chrome */
+
   #section0{
       overflow: hidden;
   }
@@ -60,22 +61,21 @@
 
   /* Defining each section background and styles
   * --------------------------------------- */
-  #section0{
-      background-image: url("/website_homepage/static/src/img/bg1.jpg");
-      padding: 30% 0 0 0;
-  }
+
   #section2{
       background-image: url("/website_homepage/static/src/img/bg3.jpg");
       padding: 6% 0 0 0;
   }
+
   #section3{
       background-image: url("/website_homepage/static/src/img/bg4.jpg");
       padding: 6% 0 0 0;
   }
+
   #section3 h1{
       color: #000;
   }
-  
+
   #section4{
       background-image: url("/website_homepage/static/src/img/bg1.jpg");
       padding: 30% 0 0 0;
@@ -88,40 +88,33 @@
       background-image: url("/website_homepage/static/src/img/bg2.jpg");
       padding: 6% 0 0 0;
   }
+
   #slide2{
       background-image: url("/website_homepage/static/src/img/bg5.jpg");
       padding: 6% 0 0 0;
   }
 
 
-/* Fixed header and footer.
-    * --------------------------------------- */
-    #header, #footer{
-        position:fixed;
-        height: 50px;
-        display:block;
-        width: 100%;
-        background: #333;
-        z-index:9;
-        text-align:center;
-        color: #f2f2f2;
-        padding: 20px 0 0 0;
-    }
+  .new-header {
+    background: transparent none repeat scroll 0 0;
+    z-index: 10;
+  }
 
-    #header{
-        top:0px;
-    }
-    #footer{
-        bottom:0px;
-    }
+  .new-header nav {
+    margin: 32px 0;
+  }
 
-
-    /* Bottom menu
-    * --------------------------------------- */
-    #infoMenu {
-        bottom: 80px;
-    }
-    #infoMenu li a {
-        color: #fff;
-        z-index: 999;
-    }
+  .new-header nav ul {
+    color: #fff;
+    display: inline-block;
+    list-style: outside none none;
+    text-transform: uppercase;
+     margin: 38px;
+  }
+ 
+  .new-header nav ul li {
+    box-shadow: 1px 1px 13px;
+    display: inline-block;
+    margin-left: 30px;
+    padding: 4px 22px;
+  }
